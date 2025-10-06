@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* --- Variables de Color y Estilos Generales --- */
+:root {
+  --bs-primary: #044d35; /* Azul oscuro UNIMINUTO */
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #029CE6;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #044d35;
+  --bs-body-bg: #f4f6f9; /* Fondo gris claro para la página */
+  --bs-card-bg: #ffffff;
+  --bs-card-border-color: #044d35;
+  --bs-card-cap-bg: #f8f9fa;
+}
+
+body {
+  background-color: var(--bs-body-bg) !important;
+}
+
+.bslib-sidebar-layout {
+  --_border: #a71c1c !important;
+}
+
+.banner {
+  background: var(--bs-primary) !important;
+}
+
+.banner-center {
+
+  color: var(--bs-light) !important;
+}
+
+.banner-center h2 {
+  font-family: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.banner-right {
+  filter: brightness(0) invert(1);
+}
+
+/* --- Estilos para las Tarjetas (Cards) --- */
+.card {
+  border: 1px solid var(--bs-card-border-color);
+  box-shadow: 0 0.125rem 0.25rem #044d35;
+  border-radius: 0.5rem; /* Bordes redondeados */
+  height: 100%; /* Asegura que las tarjetas en una fila tengan la misma altura */
+}
+
+.card-header {
+  background-color: #6C7A89;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Estilos para las Pestañas de Navegación --- */
+.nav-tabs .nav-link {
+  background-color: #044d35;
+  font-weight: 500;
+  color: #ffffff; /* Color de texto para pestañas inactivas */
+  margin-right: 0.2rem; /* Espacio entre pestañas */
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.nav-link:hover {
+  color: var(--bs-info) !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--bs-primary) !important;
+  background-color: var(--bs-card-bg);
+  border-bottom: 2px solid var(--bs-primary);
+}
+
+/* --- Estilos para el Panel Lateral (Sidebar) --- */
+.sidebar {
+  background-color: var(--bs-card-bg);
+  padding: 1.5rem;
+}
+
+/* --- Estilos para los Botones --- */
+.btn-primary, .btn-success, .btn-info {
+  gap: 0.5rem; /* Espacio entre el icono y el texto */
+}
+
+.btn-primary > span, .btn-success > span, .btn-info > span {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0d1524; /* Un azul un poco más oscuro */
+  border-color: #0d1524;
+}
